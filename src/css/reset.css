@@ -1,0 +1,151 @@
+b,
+em,
+i,
+span,
+small,
+strong,
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+iframe,
+form,
+ol,
+ul,
+li,
+img,
+div,
+label,
+p {
+  margin: 0;
+  padding: 0;
+  font-family:Arial,"Microsoft Yahei","Lantinghei SC","Open Sans","Hiragino Sans GB",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+body,
+html {
+  position: relative;
+  margin: 0px auto;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+}
+
+
+
+
+em,
+i {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: normal;
+}
+button,
+input,
+select {
+  vertical-align: middle;
+  outline: 0;
+  border: none;
+  font-family: 'SimHei';
+}
+input[type=button],
+input.btn {
+  outline: none;
+}
+li {
+  list-style: none;
+}
+img {
+  border: none;
+  /*width: 100%;*/
+  vertical-align: top;
+}
+img,
+ul,
+li,
+span,
+input,
+input,
+a {
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+img,
+ul,
+li,
+span,
+button,
+input,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear {
+    zoom: 1;
+}
+.clear:after {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:before {
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+body{
+    min-width: 320px;
+    color: #333333;
+}
+
+a,input,button{ outline:none; }
+::-moz-focus-inner{border:0px;}
+::-ms-clear,
+::-ms-reveal
+{
+    display:none;
+}

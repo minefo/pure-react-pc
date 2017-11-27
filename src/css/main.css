@@ -1,0 +1,123 @@
+html body {
+    background: #20a0ff;
+}
+
+.login-container {
+    padding: 30px;
+    background: #fff;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left:0px;
+    right: 0px;
+    margin: 200px  auto auto;
+}
+
+/*页面头部位置start*/
+.header-container {
+    padding: 0 20px;
+    height: 80px;
+    top:0px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    /*background: #20a0ff;*/
+    background: url("../images/header.gif");
+
+}
+
+.header-container .left-title {
+    float:left;
+    line-height: 80px;
+    height: 80px;
+    font-size: 34px;
+    padding-left: 60px;
+    background: url("../images/p.png") left center no-repeat;
+    color:#fff;
+}
+
+.header-container .right-content {
+    float:right;
+}
+
+.header-container .right-content li{
+    float: left;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    margin: 0 10px;
+    line-height: 80px;
+    font-size: 16px;
+}
+/*页面底部位置end*/
+
+/*页面左侧start*/
+aside {
+    background: #eef1f6;
+    width: 250px;
+    height: 100%;
+    top:0px;
+    padding-top:80px;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+}
+aside .left-wrap{
+    height: 100%;
+    float: left;
+    background:#ecf6fd;
+}
+/*页面左侧end*/
+
+/*页面右侧start*/
+ .right-wrap {
+     background: #fff;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     top:0px;
+     padding-left:270px;
+     padding-right: 20px;
+     padding-top:80px;
+     position: absolute;
+     box-sizing: border-box;
+     z-index:0;
+}
+.nav-wraper {
+    line-height: 50px;
+    height: 50px;
+}
+.search-wraper {
+    padding-bottom: 10px;
+}
+.pagination-wraper {
+    margin-top: 20px;
+    text-align: center;
+}
+/*页面右侧end*/
+
+
+/*公共样式start*/
+.txt-center{
+    text-align: center;
+}
+.form-btnspace{
+    padding:0px 10px ;
+}
+/*公共样式end*/
+
+/*面包屑导航*/
+.bread-wraper {
+    line-height: 38px;
+    height: 38px;
+}
+/*面包屑导航*/
+
+.has-success .ant-form-explain{
+    display: none;
+}
+
+.ant-form .ant-form-explain{
+    color:red;
+}
