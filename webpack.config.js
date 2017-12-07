@@ -1,6 +1,8 @@
 const path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const extractCSS = new  ExtractTextPlugin('css/[name].css?[contenthash]');
 
 
 module.exports = {
@@ -56,28 +58,20 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    { loader: "style-loader" },
-                    { loader: "css-loader" }
-                ]
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader?minimize',
+                    use: ['css-loader?minimize']
+                })
             },
-            {
-                test: /\.(png|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            limit: 8192
-                        }
-                    }
-                ]
-            }
+            {test: /\.jpe?g$|\.gif$|\.png$/, loader: 'url-loader?limit=8192&name=images/[hash:8].[name].[ext]'},
+            {test: /\.svg$|\.woff$|\.ttf$|\.eot$/, loader: 'url-loader?limit=81920&name=font/[hash:8].[name].[ext]'},
         ]
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin({
             name:"vendor"
         }),
+        extractCSS,
         new webpack.NamedModulesPlugin(),
         new HtmlWebpackPlugin({
             title:"这里是title",
