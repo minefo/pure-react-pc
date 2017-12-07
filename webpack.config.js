@@ -26,7 +26,7 @@ module.exports = {
         open: true,
         openPage: '',
         compress: true,
-        port: 9000,
+        port: 9003,
         useLocalIp: true,
         host: "0.0.0.0",
         historyApiFallback:true,

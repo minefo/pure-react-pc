@@ -157,14 +157,14 @@ export default class SourceProductMappingPage extends React.Component {
                     <Form>
                         <FormItem
                             label="商品分类编码"
-                            labelCol={{ span: 4 }}
+                            labelCol={{ span: 6 }}
                             wrapperCol={{ span: pageConstant.inputWidth }}>
                             {this.state.editInit.categoriesCode}
                         </FormItem>
 
                         <FormItem
                             label="商品分类名称"
-                            labelCol={{ span: 4 }}
+                            labelCol={{ span: 6 }}
                             wrapperCol={{ span: pageConstant.inputWidth }}>
                             {this.state.editInit.categoriesName}
                         </FormItem>
@@ -197,7 +197,7 @@ class AddAndEditForm extends React.Component {
             <Form onSubmit={this.handleSubmit}>
                 <FormItem
                     label="商品分类编码"
-                    labelCol={{ span: 4 }}
+                    labelCol={{ span: 6 }}
                     wrapperCol={{ span: pageConstant.inputWidth }}
                 >
                     {this.props.form.getFieldDecorator('categoriesCode', {
@@ -208,7 +208,7 @@ class AddAndEditForm extends React.Component {
                 </FormItem>
                 <FormItem
                     label="商品分类名称"
-                    labelCol={{ span: 4 }}
+                    labelCol={{ span: 6 }}
                     wrapperCol={{ span: pageConstant.inputWidth }}
                 >
                     {this.props.form.getFieldDecorator('categoriesName', {
